@@ -157,7 +157,7 @@ spec:
             {{- end }}
             {{- if .Values.settings }}
             - name: {{ .Values.settings.name }}
-              mountPath: /data/.node-red/settings.js
+              mountPath: /data/.node-red
               subPath: settings.js
             {{- end }}
             {{- with .Values.extraVolumeMounts }}
